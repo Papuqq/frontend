@@ -1,0 +1,138 @@
+:root {
+  --padding-value: 60px; /* поля */
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  background-color: white;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Ferry";
+  src: url("public/fonts/Ferry/Ferry-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("public/fonts/Inter/Inter-VariableFont_slnt.ttf");
+  font-weight: 400;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("public/fonts/Inter/Inter-VariableFont_slnt.ttf");
+  font-weight: 400;
+  font-style: normal;
+  }
+
+@media screen and (max-width: 375px) {
+  #root{
+    width: 375px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: Ferry, Helvetica;
+}
+
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 30px;
+}
+h5 {
+  color: #000;
+  font-family: Inter-Regular;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  margin: 0;
+}
+
+p {
+  color: #000;
+  font-family: Inter-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+button.button {
+  background-color: #5970ff;
+  border-radius: 5px;
+  min-height: 59px;
+  left: 0;
+  min-width: 335px;
+  border-style: none;
+  font-size: 22px;
+  color: #FFF;
+  font-family: "Inter-Regular", Helvetica;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  opacity: 1;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --padding-value: 30px; /* поля */
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 375px) {
+  :root {
+    --padding-value: 14px; /* поля */
+  }
+  h1, h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 19px;
+  }
+  p {
+    font-size: 12px;
+  }
+  button.button {
+    min-width: 286px;
+    font-size: 20px;
+  }
+}

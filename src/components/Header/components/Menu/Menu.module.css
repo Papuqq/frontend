@@ -1,0 +1,33 @@
+
+.group_menu{
+    display: flex;
+    flex-direction: row;
+    /* gap: 49px; */
+    width: 242px;
+    justify-content: space-between;
+    margin: 10px 20px 10px 10px;
+}
+.item_menu{
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.iconMenu{
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .group_menu{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .group_menu{
+        display: none;
+    }
+}

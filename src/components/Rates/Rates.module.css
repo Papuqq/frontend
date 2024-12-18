@@ -1,0 +1,39 @@
+.unit {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: var(--padding-value);
+}
+
+.title {
+    color: #000;
+    font-family: Ferry;
+
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.45px;
+    margin: var(--padding-value) 0;
+}
+.rates {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+@media screen and (max-width: 1000px) {
+    .rates {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 375px) {
+    .unit {
+        width: 347px;
+        padding: 55px var(--padding-value);
+    }
+
+    .rates {
+        flex-direction: column;
+        gap: 43px;
+    }
+}
